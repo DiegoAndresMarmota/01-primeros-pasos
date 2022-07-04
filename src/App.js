@@ -3,6 +3,7 @@ import './App.css';
 import MiComponente from './MiComponente';
 import { SegundoComponente } from './SegundoComponente';
 import { TercerComponente } from './TercerComponente';
+import { EventosComponente } from './EventosComponente';
 
 function App() {
 
@@ -21,7 +22,9 @@ function App() {
           Bienvenidos
         </p>
         {/* {/*Cargar mi primer componente */}
-        <div>
+        <div className='componentes'>
+          <hr/>
+            <EventosComponente/>
           <hr/>
           <TercerComponente
             /*nombre="Diego"
