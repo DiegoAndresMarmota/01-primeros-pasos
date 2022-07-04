@@ -10,6 +10,10 @@ export const EventosComponente = () => {
         alert("Has dado doble click!");
     }
 
+    const hasEntrado = (e, accion) => {
+        console.log(`Has ${accion} a la caja con el mouse!`);
+    }
+
   return (
     <div>
         <h1>Eventos en React</h1>
@@ -24,6 +28,12 @@ export const EventosComponente = () => {
             <button onDoubleClick={ hasDadoDobleClick }>Dame doble click!</button>
           </p>
         
+          <div id="caja" onMouse={ e => hasEntrado(e, "entrado") }
+          onMouseLeave={ e => hasEntrado(e,"salido") }
+          >
+            {/*Evento onMouseEnter onMouseLeave*/}
+            Pasa por encima!
+          </div>
     </div>
   )
 }
