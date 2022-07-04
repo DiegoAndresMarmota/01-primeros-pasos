@@ -24,8 +24,8 @@ function App() {
         <div>
           <hr/>
           <TercerComponente
-            nombre="Diego"
-            apellido="Andres"
+            /*nombre="Diego"
+            apellido="Andres" */
             signo="Libra"
             ciudad="Santiago"
             animales={mascotas}
